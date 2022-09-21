@@ -19,5 +19,4 @@ function colorearBarra(){
     else porcentaje=grados
     barra.innerHTML = grados
     barra.style.height= `${porcentaje}%`
-
 }
