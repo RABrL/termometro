@@ -9,6 +9,7 @@ convertir.addEventListener('click', ()=> {(farenheit.value)?convertirGrados():lo
 
 function convertirGrados(){
     grados = Math.round((farenheit.value-32)*(5/9))
+    farenheit.value=''
     divGrados.innerHTML= grados + ' °'
     colorearBarra() 
 }

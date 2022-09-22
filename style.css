@@ -44,6 +44,7 @@ main{
     flex-direction: column;
     align-items: center;
     align-content: center;
+    width: 100px;
 }
 .barra >div{
     height: 100%;
@@ -81,5 +82,5 @@ main{
 #barra-color{
     background-color: red;
     width: 100%;
-    color: aliceblue;
+    color: black;
 }
