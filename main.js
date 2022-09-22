@@ -1,11 +1,17 @@
 const farenheit = document.querySelector('#farenheit')
 const divGrados = document.querySelector('.grados')
-const convertir = document.querySelector('.convertir')
+const btnConvertir = document.querySelector('.convertir')
 const barra = document.querySelector('#barra-color')
+const btnReiniciar = document.querySelector('#reiniciar')
 
 let grados
 
-convertir.addEventListener('click', ()=> {(farenheit.value)?convertirGrados():location.reload()})
+btnConvertir.addEventListener('click', ()=> {(farenheit.value)?convertirGrados():alert('Agrega un valor en farenheit')})
+btnReiniciar.addEventListener('click', reiniciar)
+
+function reiniciar(){
+    location.reload()
+}
 
 function convertirGrados(){
     grados = Math.round((farenheit.value-32)*(5/9))
