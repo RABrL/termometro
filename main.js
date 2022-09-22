@@ -12,6 +12,7 @@ function convertirGrados(){
     divGrados.innerHTML= grados + ' °'
     colorearBarra() 
 }
+
 function colorearBarra(){
     let porcentaje
     if(grados<0) porcentaje = 0
